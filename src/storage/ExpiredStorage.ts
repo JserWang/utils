@@ -22,8 +22,7 @@ export default class ExpiredStorage {
       const item = new StorageItem(value, expires)
 
       this.storage.setItem(key, JSON.stringify(item))
-    }
-    catch (err) {
+    } catch (err) {
       throw new Error(`Storage setItem ${key} error: ${JSON.stringify(err)}`)
     }
   }
@@ -51,8 +50,7 @@ export default class ExpiredStorage {
       }
 
       return storageItem.data as T
-    }
-    catch (err) {
+    } catch (err) {
       throw new Error(`Storage get ${key} error: ${JSON.stringify(err)}`)
     }
   }
@@ -81,8 +79,7 @@ export default class ExpiredStorage {
 
     if (typeof key === 'string') {
       storageItem = this.get(key)
-    }
-    else {
+    } else {
       storageItem = key
     }
 

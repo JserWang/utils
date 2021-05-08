@@ -1,8 +1,7 @@
 /**
  * Promisify setTimeout
  * @param ms milliseconds
- * @param callback  
- * @returns 
+ * @returns
  */
 export function sleep(ms: number) {
   return new Promise<void>((resolve) => {
