@@ -1,8 +1,14 @@
+import { isBrowser } from '../is'
 import StorageItem from './StorageItem'
 import { StorageTypeEnum } from './types'
 
-const getStorage = (type: StorageTypeEnum): Storage =>
-  type === StorageTypeEnum.Session ? window.sessionStorage : window.localStorage
+const getStorage = (type: StorageTypeEnum): Storage => {
+  if (isBrowser()) {
+    return type === StorageTypeEnum.Session ? window.sessionStorage : window.localStorage
+  } else {
+    return {} as any
+  }
+}
 
 export default class ExpiredStorage {
   private storage: Storage
