@@ -3,3 +3,4 @@ node_modules/
 .jest-*
 dist
 .idea
+coverage
