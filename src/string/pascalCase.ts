@@ -4,8 +4,8 @@ import { isString } from './isString'
 /**
  * 字符串转帕斯卡格式
  *
+ * @example
  * pascalCase("foo bar") => 'FooBar'
- *
  * pascalCase("user/test") => 'UserTest'
  *
  * @param val
