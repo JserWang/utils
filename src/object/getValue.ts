@@ -4,6 +4,7 @@ import { isObject } from './isObject'
  * 根据属性名从对象中取值
  * 支持 a.b.c 的形式
  *
+ * @example
  * const obj = { a: { b: { c: { d: 'hello' } } } }
  *
  * getValue(obj, 'a.b.c') => { d: 'hello' }
@@ -13,7 +14,7 @@ import { isObject } from './isObject'
  * @param obj
  * @param propertyKey
  */
-export function getValue(obj: Record<string, any>, propertyKey: string) {
+export function getValue(obj: unknown, propertyKey: string) {
   if (!propertyKey)
     return undefined
 
