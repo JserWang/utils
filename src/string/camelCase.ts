@@ -6,8 +6,8 @@ const reg = /[-_.\W\s]+(\w|$)/g
 /**
  * 字符串转驼峰格式
  *
+ * @example
  * camelCase('foo bar') => 'fooBar'
- *
  * camelCase('api/user/list') => 'apiUserList'
  *
  * @param val

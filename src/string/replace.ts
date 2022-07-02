@@ -3,7 +3,8 @@ import { isString } from './isString'
 /**
  * 将字符串中的全量 ch1 替换 ch2
  *
- * replace('foo baz', o, i) => 'fii baz'
+ * @example
+ * replace('foo baz', 'o', 'i') => 'fii baz'
  *
  * @param val
  * @param ch1

@@ -3,6 +3,7 @@ import { isString } from './isString'
 /**
  * 颠倒字符串
  *
+ * @example
  * reverse('foo') => 'oof'
  *
  * @param val
