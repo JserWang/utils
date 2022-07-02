@@ -1,10 +1,10 @@
-import { is } from '../common/is'
+import { is } from '../base/is'
 
 /**
  * 校验是否为字符串
  *
+ * @example
  * isString("foo") => true
- *
  * isString(1) => false
  *
  * @param val
