@@ -1,5 +1,0 @@
-# `storage`
-
-> TODO: description
-
-## Usage

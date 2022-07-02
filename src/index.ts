@@ -1,7 +1,0 @@
-export * from './date'
-export * from './promise'
-export * from './storage'
-export * from './base'
-export * from './is'
-export * from './to'
-export * from './types'

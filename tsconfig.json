@@ -1,13 +1,16 @@
 {
+  "include": ["./"],
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
+    "target": "ES2019",
+    "outDir": "./dist",
+    "module": "ES2020",
     "lib": ["ESNext", "DOM"],
+    "sourceMap": true,
     "moduleResolution": "node",
-    "esModuleInterop": true,
     "strict": true,
-    "strictNullChecks": true,
-    "resolveJsonModule": true,
-    "types": ["node"]
+    "declaration": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true
   }
 }
