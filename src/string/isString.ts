@@ -1,4 +1,4 @@
-import { is } from '../base/is'
+import { is } from '../base'
 
 /**
  * 校验是否为字符串

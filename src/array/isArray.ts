@@ -1,4 +1,4 @@
-import type { MaybeArray } from '../base/types'
+import type { MaybeArray } from '../base'
 
 /**
  * 校验是否为数组

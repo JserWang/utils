@@ -1,6 +1,6 @@
-import type { MaybeArray, Nullable } from '../base/types'
+import type { MaybeArray, Nullable } from '../base'
 import { isArray } from './isArray'
-import { isEmpty } from './isEmpty'
+import { isEmptyArray } from './isEmptyArray'
 import { toArray } from './toArray'
 
 /**
@@ -20,7 +20,7 @@ export function exchange<T>(array: Nullable<MaybeArray<T>>, from: number, to: nu
   if (!isArray(array))
     return toArray(array)
 
-  if (isEmpty(array))
+  if (isEmptyArray(array))
     return array
 
   array.splice(to, 0, array.splice(from, 1)[0])

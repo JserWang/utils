@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest'
-import { isEmptyArray } from '../../src/array/isEmptyArray'
+import { isEmptyArray } from '../../src'
 
 it('array isEmpty', () => {
   expect(isEmptyArray(null)).toBe(true)

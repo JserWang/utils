@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest'
-import { toArray } from '../../src/array/toArray'
+import { toArray } from '../../src'
 
 it('toArray', () => {
   expect(toArray([])).toEqual([])

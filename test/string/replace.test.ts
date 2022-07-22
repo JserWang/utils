@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest'
-import { replace } from '../../src/string/replace'
+import { replace } from '../../src'
 
 it('replace', () => {
   expect(replace(undefined)).toEqual('')

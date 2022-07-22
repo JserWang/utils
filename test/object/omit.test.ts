@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest'
-import { omit } from '../../src/object/omit'
+import { omit } from '../../src'
 
 it('omit', () => {
   const obj = {

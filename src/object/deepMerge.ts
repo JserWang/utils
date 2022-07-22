@@ -1,4 +1,4 @@
-import type { DeepMerge } from '../base/types'
+import type { DeepMerge } from '../base'
 import { isObject } from './isObject'
 
 /**

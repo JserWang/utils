@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest'
-import { isString } from '../../src/string/isString'
+import { isString } from '../../src'
 
 it('isString', () => {
   expect(isString(null)).toBe(false)

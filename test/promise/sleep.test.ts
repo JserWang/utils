@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest'
-import { sleep } from '../../src/promise/sleep'
+import { sleep } from '../../src'
 
 it('sleep', async () => {
   let num = 0

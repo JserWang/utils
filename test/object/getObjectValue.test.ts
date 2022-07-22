@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest'
-import { getObjectValue } from '../../src/object/getObjectValue'
+import { getObjectValue } from '../../src'
 
 it('getValue from object', () => {
   const obj = {

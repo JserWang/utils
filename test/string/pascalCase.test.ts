@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest'
-import { pascalCase } from '../../src/string/pascalCase'
+import { pascalCase } from '../../src'
 
 it('pascalCase', () => {
   expect(pascalCase(undefined)).toEqual('')

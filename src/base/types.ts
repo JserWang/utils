@@ -13,6 +13,11 @@ export type MaybeArray<T> = T | Array<T>
  */
 export type MaybePromise<T> = T | PromiseLike<T>
 
+/**
+ * 数组项的类型
+ */
+export type ElementOf<T> = T extends (infer E)[] ? E : never
+
 export type Fn<T = void> = () => T
 
 type MergeInsertions<T> =

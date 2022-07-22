@@ -1,4 +1,4 @@
-import type { Fn } from '../base/types'
+import type { Fn } from '../base'
 
 /**
  * Promisify setTimeout

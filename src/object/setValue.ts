@@ -1,5 +1,5 @@
 import { deepMerge } from './deepMerge'
-import { isEmpty } from './isEmpty'
+import { isEmptyObject } from './isEmptyObject'
 
 /**
  * 为对象赋值
@@ -23,5 +23,5 @@ export function setValue(target: Record<any, any>, propertyKey: string, value: a
     return { [c]: p }
   }, {})
 
-  return isEmpty(target) ? processed : deepMerge(target, processed)
+  return isEmptyObject(target) ? processed : deepMerge(target, processed)
 }

@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest'
-import { unique } from '../../src/array/unique'
+import { unique } from '../../src'
 
 it('array unique', () => {
   expect(unique(null)).toEqual([])

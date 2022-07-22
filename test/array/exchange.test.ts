@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest'
-import { exchange } from '../../src/array/exchange'
+import { exchange } from '../../src'
 
 it('exchange', () => {
   expect(exchange(null, 0, 1)).toEqual([])

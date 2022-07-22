@@ -1,5 +1,5 @@
-import type { MaybeArray } from '../base/types'
-import { isNullOrUnDef } from '../base/is'
+import type { MaybeArray } from '../base'
+import { isNullOrUnDef } from '../base'
 import { isArray } from './isArray'
 import { toArray } from './toArray'
 

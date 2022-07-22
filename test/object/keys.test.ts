@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest'
-import { keys } from '../../src/object/keys'
+import { keys } from '../../src'
 
 it('omit', () => {
   const obj = {
@@ -10,7 +10,7 @@ it('omit', () => {
     c: 'c',
   }
 
-  expect(keys(null)).toEqual([])
+  expect(keys({})).toEqual([])
 
   expect(keys(obj)).toEqual(['a', 'b', 'c'])
 })

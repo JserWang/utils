@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest'
-import { getArrayValue } from '../../src/array/getArrayValue'
+import { getArrayValue } from '../../src'
 
 it('getValue from array', () => {
   expect(getArrayValue(null, 1)).toBe(undefined)

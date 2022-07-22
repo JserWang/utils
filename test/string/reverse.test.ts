@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest'
-import { reverse } from '../../src/string/reverse'
+import { reverse } from '../../src'
 
 it('reverse', () => {
   expect(reverse(undefined)).toEqual('')

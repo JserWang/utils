@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest'
-import { isObject } from '../../src/object/isObject'
+import { isObject } from '../../src'
 
 it('isObject', () => {
   expect(isObject(null)).toBe(false)

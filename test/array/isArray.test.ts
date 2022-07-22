@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest'
-import { isArray } from '../../src/array/isArray'
+import { isArray } from '../../src'
 
 it('isArray', () => {
   expect(isArray([])).toBe(true)

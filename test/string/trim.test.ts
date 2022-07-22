@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest'
-import { trim } from '../../src/string/trim'
+import { trim } from '../../src'
 
 it('trim', () => {
   expect(trim(undefined)).toEqual('')

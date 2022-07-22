@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest'
-import { camelCase } from '../../src/string/camelCase'
+import { camelCase } from '../../src'
 
 it('camelCase', () => {
   expect(camelCase(undefined)).toEqual('')
