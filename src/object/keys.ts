@@ -10,5 +10,5 @@ import { isObject } from './isObject'
  * @param obj
  */
 export function keys<T extends object>(obj?: T): Array<keyof T> {
-  return !isObject(obj) ? [] : Object.keys(obj)
+  return !isObject(obj) ? [] : Object.keys(obj) as Array<keyof T>
 }
