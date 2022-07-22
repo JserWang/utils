@@ -1,4 +1,5 @@
 import type { MaybeArray, Nullable } from '../base/types'
+import { isNullOrUnDef } from '../base/is'
 import { isArray } from './isArray'
 
 /**
@@ -7,9 +8,11 @@ import { isArray } from './isArray'
  * @example
  * toArray('foo') => ['foo']
  * toArray(['foo']) => ['foo']
+ * toArray(null) => []
+ * toArray(undefined) => []
  *
  * @param array
  */
 export function toArray<T>(array?: Nullable<MaybeArray<T>>): Array<T> {
-  return isArray(array) ? array : [array]
+  return !isNullOrUnDef(array) ? isArray(array) ? array : [array] : []
 }
