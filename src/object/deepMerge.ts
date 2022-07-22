@@ -1,19 +1,5 @@
+import type { DeepMerge } from '../base/types'
 import { isObject } from './isObject'
-
-type MergeInsertions<T> =
-  T extends object
-    ? { [K in keyof T]: MergeInsertions<T[K]> }
-    : T
-
-type DeepMerge<F, S> = MergeInsertions<{
-  [K in keyof F | keyof S]: K extends keyof S & keyof F
-    ? DeepMerge<F[K], S[K]>
-    : K extends keyof S
-      ? S[K]
-      : K extends keyof F
-        ? F[K]
-        : never;
-}>
 
 /**
  * 深拷贝
