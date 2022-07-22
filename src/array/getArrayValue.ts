@@ -1,5 +1,5 @@
-import type { MaybeArray } from '../base/types'
-import { isNullOrUnDef } from '../base/is'
+import type { MaybeArray } from '../base'
+import { isNullOrUnDef } from '../base'
 import { isArray } from './isArray'
 
 /**
@@ -12,7 +12,7 @@ import { isArray } from './isArray'
  * getValue(null, -1) => undefined
  *
  */
-export function getValue<T>(array: MaybeArray<T>, index: number) {
+export function getArrayValue<T>(array: MaybeArray<T>, index: number) {
   if (isNullOrUnDef(array) || !isArray(array))
     return undefined
 

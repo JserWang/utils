@@ -1,4 +1,4 @@
-import { isNullOrUnDef } from '../base/is'
+import { isNullOrUnDef } from '../base'
 import { isArray } from './isArray'
 
 /**
@@ -11,7 +11,7 @@ import { isArray } from './isArray'
  *
  * @param val
  */
-export function isEmpty(val: unknown) {
+export function isEmptyArray(val: unknown) {
   if (isNullOrUnDef(val) || !isArray(val))
     return true
 
