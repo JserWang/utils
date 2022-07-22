@@ -6,6 +6,8 @@ it('pick', () => {
     a: 'a',
     b: 'b',
     c: 'c',
+    d: undefined,
+    e: null,
   }
 
   expect(pick(null, [])).toEqual({})
@@ -19,4 +21,10 @@ it('pick', () => {
     b: 'b',
     c: 'c',
   })
+
+  expect(pick(obj, ['d'])).toEqual({})
+
+  expect(pick(obj, ['d'], true)).toEqual({ d: undefined })
+
+  expect(pick(obj, ['e'])).toEqual({ e: null })
 })
