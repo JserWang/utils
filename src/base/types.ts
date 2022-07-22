@@ -13,6 +13,8 @@ export type MaybeArray<T> = T | Array<T>
  */
 export type MaybePromise<T> = T | PromiseLike<T>
 
+export type Fn<T = void> = () => T
+
 type MergeInsertions<T> =
     T extends object
       ? { [K in keyof T]: MergeInsertions<T[K]> }
