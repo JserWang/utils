@@ -1,7 +1,7 @@
 import { expect, it } from 'vitest'
 import { getValue } from '../../src/object/getValue'
 
-it('getValue', () => {
+it('getValue from object', () => {
   const obj = {
     a: {
       b: {
