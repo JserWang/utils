@@ -14,7 +14,7 @@ import { isObject } from './isObject'
  * @param obj
  * @param propertyKey
  */
-export function getObjectValue(obj: unknown, propertyKey: string) {
+export function getObjectValue<T = unknown>(obj: unknown, propertyKey: string): T | undefined {
   if (!propertyKey)
     return undefined
 
