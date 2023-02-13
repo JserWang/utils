@@ -1,5 +1,6 @@
 export * from './exchange'
 export * from './getArrayValue'
+export * from './includes'
 export * from './isArray'
 export * from './isEmptyArray'
 export * from './toArray'
