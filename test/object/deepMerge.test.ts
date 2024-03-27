@@ -5,6 +5,7 @@ describe('deepMerge', () => {
   it('object merge', () => {
     const obj1 = {
       a: {
+        b1: ['a', 'c', 'd'],
         b: {
           c: '1',
         },
@@ -13,6 +14,7 @@ describe('deepMerge', () => {
 
     const obj2 = {
       a: {
+        b1: ['b', 'c'],
         b: {
           c2: '2',
         },
@@ -21,6 +23,7 @@ describe('deepMerge', () => {
 
     const expected = {
       a: {
+        b1: ['a', 'c', 'd', 'b'],
         b: {
           c: '1',
           c2: '2',
