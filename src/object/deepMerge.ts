@@ -8,19 +8,17 @@ import { isObject } from './isObject'
  * @param sources
  */
 export function deepMerge<T extends object = object, S extends object = T>(target: T, ...sources: S[]): DeepMerge<T, S> {
-  if (!sources.length) {
-    // @ts-expect-error
+  if (!sources.length)
     return target
-  }
+
   const source = sources.shift()
 
   if (isObject(target) && isObject(source)) {
     for (const key in source) {
       if (isObject(source[key])) {
-        // @ts-expect-error
         if (!target[key])
           Object.assign(target, { [key]: {} })
-        // @ts-expect-error
+
         deepMerge(target[key], source[key])
       }
       else {

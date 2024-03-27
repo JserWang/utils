@@ -80,4 +80,3 @@ describe('deepMerge', () => {
     expect(deepMerge(obj1, obj2)).toEqual(expected)
   })
 })
-

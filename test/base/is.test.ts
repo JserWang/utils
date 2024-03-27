@@ -18,4 +18,3 @@ describe('base is', () => {
     expect(isNull(0)).toBe(false)
   })
 })
-

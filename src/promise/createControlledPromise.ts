@@ -1,8 +1,8 @@
 import type { MaybePromise } from '../base'
 
 interface CreateControlledPromise<T = void> extends Promise<T> {
-  resolve(value: MaybePromise<T>): void
-  reject(reason?: any): void
+  resolve: (value: MaybePromise<T>) => void
+  reject: (reason?: any) => void
 }
 
 /**

@@ -59,4 +59,3 @@ describe('setValue', () => {
     expect(setValue(target, propertyKey, 'hi')).toEqual(expected)
   })
 })
-

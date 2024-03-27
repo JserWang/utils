@@ -24,8 +24,7 @@ it('array unique', () => {
     .toEqual(
       [{
         name: 'foo',
-      },
-      {
+      }, {
         name: 'bar',
       }],
     )
